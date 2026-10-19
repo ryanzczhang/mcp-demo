@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="MCP Demo — 一个可直接部署到 Vercel 的静态站点示例。">
+  <title>MCP Demo</title>
+  <style>
+    :root{color-scheme:dark;--bg:#09090b;--panel:#111114;--line:#29292f;--text:#fafafa;--muted:#a1a1aa;--green:#42d392}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 75% 10%,#17372d 0,transparent 28%),var(--bg);color:var(--text);font:16px/1.65 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.shell{width:min(1040px,calc(100% - 40px));margin:auto}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;font-weight:700}.mark{display:grid;place-items:center;width:34px;height:34px;border:1px solid #3f3f46;border-radius:9px;background:#18181b;color:var(--green);font-family:monospace}.badge{border:1px solid #2f5c4c;border-radius:999px;padding:4px 10px;color:#84e1bc;background:#10271f;font-size:12px}.hero{padding:110px 0 85px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:60px;align-items:center}.eyebrow{color:var(--green);font:600 12px/1.4 monospace;letter-spacing:.13em;text-transform:uppercase}h1{font-size:clamp(48px,8vw,82px);line-height:1.02;letter-spacing:-.055em;margin:18px 0 25px}.lead{max-width:680px;color:var(--muted);font-size:18px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.button{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border-radius:8px;border:1px solid var(--line);color:var(--text);text-decoration:none;background:#18181b}.button.primary{background:var(--text);color:#111;border-color:var(--text);font-weight:650}.terminal{background:#0c0c0f;border:1px solid var(--line);border-radius:14px;box-shadow:0 24px 70px #0008;overflow:hidden}.terminal-head{display:flex;align-items:center;gap:6px;height:42px;padding:0 14px;border-bottom:1px solid var(--line)}.dot{width:8px;height:8px;border-radius:50%;background:#3f3f46}.terminal pre{margin:0;padding:22px;color:#d4d4d8;white-space:pre-wrap;font:13px/1.9 "SFMono-Regular",Consolas,monospace}.ok{color:var(--green)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding-bottom:90px}.card{border:1px solid var(--line);border-radius:12px;background:linear-gradient(145deg,#151518,#0f0f12);padding:23px}.card .num{font:12px monospace;color:var(--green)}.card h2{font-size:17px;margin:25px 0 8px}.card p{color:var(--muted);font-size:14px;margin:0}.footer{display:flex;justify-content:space-between;gap:15px;padding:26px 0;border-top:1px solid var(--line);color:#71717a;font-size:12px}@media(max-width:760px){.hero{grid-template-columns:1fr;padding:75px 0 60px;gap:38px}.grid{grid-template-columns:1fr}.footer{flex-direction:column}h1{font-size:52px}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <nav class="nav"><div class="brand"><span class="mark">M</span>MCP Demo</div><span class="badge">Vercel Ready</span></nav>
+    <main>
+      <section class="hero">
+        <div><div class="eyebrow">Minimal · Static · Deployable</div><h1>从空仓库，<br>到第一个站点。</h1><p class="lead">这是一个零依赖、零构建的静态页面。提交到 GitHub 后即可导入 Vercel，每次推送都会自动生成新的 Deployment。</p><div class="actions"><a class="button primary" href="https://vercel.com/new" target="_blank" rel="noopener noreferrer">在 Vercel 中导入</a><a class="button" href="https://github.com/ryanzczhang/mcp-demo" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库</a></div></div>
+        <div class="terminal" aria-label="部署步骤示意"><div class="terminal-head"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><pre><span class="ok">✓</span> repository connected
+<span class="ok">✓</span> framework: Other
+<span class="ok">✓</span> build command: none
+<span class="ok">✓</span> output directory: ./
+
+<span class="ok">deployment ready</span></pre></div>
+      </section>
+      <section class="grid" aria-label="项目特点"><article class="card"><span class="num">01</span><h2>无需构建工具</h2><p>只有 HTML 和 CSS，不需要安装 Node.js 依赖。</p></article><article class="card"><span class="num">02</span><h2>适合验证流程</h2><p>用最少变量检查 GitHub 与 Vercel 的连接是否正常。</p></article><article class="card"><span class="num">03</span><h2>后续可以升级</h2><p>需要交互或组件化时，再迁移到 Vite、React 或 Vue。</p></article></section>
+    </main>
+    <footer class="footer"><span>MCP Demo</span><span>Static HTML · No build step</span></footer>
+  </div>
+</body>
+</html>
